@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   atoi.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 18:41:06 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/16 14:04:49 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/21 19:55:12 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <stdio.h>
 /*
 int	ft_atoi(const char *nptr);

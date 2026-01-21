@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   strnstr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 18:11:26 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/15 18:40:42 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/19 14:44:01 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <bsd/string.h>
-/*
+
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int	main(void)
@@ -27,7 +27,7 @@ int	main(void)
 
 }
 
-*/
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;

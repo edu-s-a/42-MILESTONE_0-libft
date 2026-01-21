@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   calloc.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:04:18 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/16 18:32:07 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/21 14:01:29 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <bsd/string.h>
@@ -28,7 +27,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);
-	memset(ptr, 0, total);
+	ft_memset(ptr, 0, total);
 	return (ptr);
 }
 /*

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   isalnum.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 12:47:18 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/13 15:35:39 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/21 14:01:53 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 int	ft_isalnum(char *str)
 {
 	if (('A' <= str && str <= 'Z') || ('a' <= str && str <= 'z')

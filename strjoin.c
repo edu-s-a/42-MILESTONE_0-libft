@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strtrim.c                                          :+:      :+:    :+:   */
+/*   strjoin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 13:15:04 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/19 13:26:21 by edsole-a         ###   ########.fr       */
+/*   Created: 2026/01/19 12:56:37 by edsole-a          #+#    #+#             */
+/*   Updated: 2026/01/21 14:02:16 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	size_t	j;
-	char	*trim;
+	char	*join;
 
-	i = 0;
-	j = 0;
-	trim = malloc();
-	if (!trim)
+	join = malloc(ft_strlen(s1) + ft_strlen(s2));
+	if (!join)
 		return (NULL);
-	while (s1[i])
-	{
-		if(s1[i] == set[j])
-			
-		subs[i] = s[i];
-		i++
-	}
-	subs[i] = '\0';
-	return (subs);
+	ft_strlcpy(join, s1, ft_strlen(s1));
+	ft_strlcat(join, s2, ft_strlen(s2));
+
+	return (join);
 
 }
