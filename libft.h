@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:39:15 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/21 13:59:15 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/21 20:08:28 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 typedef	struct	s_list
 {
