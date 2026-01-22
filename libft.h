@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:39:15 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 16:19:34 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 16:30:29 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,15 @@ void    ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
-int	ft_isalnum(char *str);
+int	ft_isalnum(int c);
 
-int	ft_isalpha(char *str);
+int	ft_isalpha(int c);
 
-int	ft_isascii(unsigned char c);
+int	ft_isascii(int c);
 
-int	ft_isdigit(char *str);
+int	ft_isdigit(int c);
 
-int	ft_isprint(char c);
+int	ft_isprint(int c);
 
 char	*ft_itoa(int n);
 
