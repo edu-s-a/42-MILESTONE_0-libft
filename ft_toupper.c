@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   toupper.c                                          :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:48:28 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/14 17:01:31 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 20:35:55 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 int	ft_toupper(int c)
 {
-	char	c_char;
+	unsigned char	uc;
 
-	c_char = (char) c;
-	if ('a' <= c_char && c_char <= 'z')
+	uc = (unsigned char) c;
+	if ('a' <= uc && uc <= 'z')
 	{
-		c_char = c_char - 32;
+		uc = uc - 32;
 	}
-	return (c_char);
+	return (uc);
 }
 /*
 int	main ()

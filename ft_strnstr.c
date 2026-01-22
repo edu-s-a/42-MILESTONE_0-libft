@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strnstr.c                                          :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 18:11:26 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/19 14:44:01 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 20:07:50 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <bsd/string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len);
-
+/*
 int	main(void)
 {
 	char 	needle[] = "General";
@@ -26,7 +26,7 @@ int	main(void)
 	return (0);
 
 }
-
+*/
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -38,17 +38,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *) big);
 	while (big[i] && i < len)
 	{
-		if (big[i] == little[0])
+		j = 0;
+		while ((i + j) < len && big[i] != '\0' && big[i + j] == little[j])
 		{
-			j = 0;
-			while (big[i] != '\0' && big[i + j] == little[j])
-			{
-				j++;
-				if (!little[j])
-					return ((char *) &big[i]);
-			}
+			j++;
 		}
+		if (!little[j])
+			return ((char *) &big[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

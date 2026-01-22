@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:40:35 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/14 12:35:12 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 21:05:49 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*src_char;
 	size_t				i;
 
-	dest_char = (char *)dest;
-	src_char = (char *)src;
+	dest_char = (unsigned char *)dest;
+	src_char = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 17:07:54 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/15 17:25:50 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 20:06:11 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,17 @@ int	main(void)
 char	*ft_strchr(const char *s, int c)
 {
 	char	c_char;
+	int		i;
 
-	c_char = (char)c;
-	while (*s)
+	i = 0;
+	c_char = (unsigned char)c;
+	while (s[i])
 	{
-		if (*s == c_char)
-			return ((char *)s);
-		s++;
+		if (s[i] == c_char)
+			return ((char *)&s[i]);
+		i++;
 	}
+	if (s[i] == c_char)
+		return ((char *)&s[i]);
 	return (NULL);
 }

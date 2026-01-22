@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:37:13 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/13 15:39:50 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 19:51:11 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int		i;
-	char	*s_char;
+	size_t		i;
+	char		*s_char;
 
 	s_char = (char *) s;
 	i = 0;
@@ -25,7 +26,7 @@ void	*ft_memset(void *s, int c, size_t n)
 		s_char[i] = c;
 		i++;
 	}
-	return (0);
+	return (s);
 }
 /*
 int main()

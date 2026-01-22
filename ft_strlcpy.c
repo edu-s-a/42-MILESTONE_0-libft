@@ -6,11 +6,13 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 12:37:35 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/21 20:35:52 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 18:03:38 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
+
 /*#include <bsd/string.h>
 
 size_t  ft_strlcpy(char *dest, const char *src, size_t size);
