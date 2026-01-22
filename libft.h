@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:39:15 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 16:30:29 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/22 16:32:55 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 typedef	struct	s_list
 {
@@ -90,7 +89,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int	ft_tolower(int c);
 
 int	ft_toupper(int c);
-
-t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *));
 
 #endif
