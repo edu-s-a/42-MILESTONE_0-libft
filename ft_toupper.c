@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:48:28 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:35:55 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/23 16:53:37 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,11 @@
 
 int	ft_toupper(int c)
 {
-	unsigned char	uc;
-
-	uc = (unsigned char) c;
-	if ('a' <= uc && uc <= 'z')
+	if ('a' <= c && c <= 'z')
 	{
-		uc = uc - 32;
+		c -= 32;
 	}
-	return (uc);
+	return (c);
 }
 /*
 int	main ()

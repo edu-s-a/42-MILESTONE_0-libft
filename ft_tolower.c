@@ -6,28 +6,26 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 17:02:01 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:35:33 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/23 16:53:47 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
-//#include <stdio.h>
+#include <stdio.h>
 
 int	ft_tolower(int c)
 {
-	unsigned char	uc;
-
-	uc = (unsigned char) c;
-	if ('A' <= uc && uc <= 'Z')
+	if ('A' <= c && c <= 'Z')
 	{
-		uc = uc + 32;
+		c += 32;
 	}
-	return (uc);
+	return (c);
 }
-/*
-int	main ()
+/*int	main ()
 {
-	printf("%c", ft_tolower('A'));
+	int	c = ' ';
+	printf("%c\n", ft_tolower(c));
+	printf("%c\n", tolower(c));
+
 	return (0);
-}
-*/
+}*/
