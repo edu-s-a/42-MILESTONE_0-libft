@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:39:15 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:20:15 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/23 17:11:00 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}				t_list;
+}					t_list;
 
 int		ft_atoi(const char *nptr);
 
