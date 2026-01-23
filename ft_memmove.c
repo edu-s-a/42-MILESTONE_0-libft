@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memmove.c                                          :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 16:02:27 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/14 12:33:43 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/23 14:09:07 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_fill(unsigned char *d_char, const unsigned char *s_char, size_t n)
 {
-	unsigned char		*dest_char;
-	const unsigned char	*src_char;
-	size_t				i;
+	size_t	i;
 
-	dest_char = (unsigned char *) dest;
-	src_char = (const unsigned char *) src;
 	i = 0;
-	if (dest_char < src_char)
+	if (d_char < s_char)
 	{
 		while (i < n)
 		{
-			dest_char[i] = src_char[i];
+			d_char[i] = s_char[i];
 			i++;
 		}
 	}
@@ -33,10 +29,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (n > 0)
 		{
-			dest_char[n - 1] = src_char[n - 1];
+			d_char[n - 1] = s_char[n - 1];
 			n--;
 		}
 	}
+}
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	unsigned char		*dest_char;
+	const unsigned char	*src_char;
+
+	if (!dest && !src)
+		return (dest);
+	dest_char = (unsigned char *) dest;
+	src_char = (const unsigned char *) src;
+	ft_fill(dest_char, src_char, n);
 	return (dest);
 }
 /*

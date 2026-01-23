@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:40:35 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 21:05:49 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:36:54 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*src_char;
 	size_t				i;
 
+	if (n == 0)
+		return (dest);
 	dest_char = (unsigned char *)dest;
 	src_char = (unsigned char *)src;
 	i = 0;
@@ -43,6 +45,10 @@ int main() {
     ft_memcpy(&b, &a, sizeof(int));
 
     printf("Value of b after calling memcpy: %d\n", b);
+	
+	ft_memcpy(((void*)0), "segfaulter tu dois", 17);
+	
+	ft_memcpy(((void*)0), ((void*)0), 3);
 
     return 0;
 }
