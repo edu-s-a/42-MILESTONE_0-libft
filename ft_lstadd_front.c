@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 19:14:14 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/23 19:47:19 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/01/24 12:51:03 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = lst;
+	new->next = *lst;
 	*lst = new;
 }

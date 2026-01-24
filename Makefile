@@ -10,11 +10,13 @@ ft_isalpha.c  ft_memchr.c   ft_putchar_fd.c  ft_strchr.c      ft_strlcpy.c   ft_
 
 OBJ = $(SRC:.c=.o)
 
+INCLUDE = libft.h 
+
 all: $(NAME)
 
 $(NAME): $(OBJ)	
 	ar rcs $(NAME) $(OBJ)
-%.o: %.c	
+%.o: %.c $(INCLUDE)	Makefile
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
@@ -25,3 +27,5 @@ fclean: clean
 	
 re: fclean all
 bonus: $(NAME)
+
+.PHONY: all clean fclean re
