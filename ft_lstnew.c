@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 17:11:27 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/24 13:37:49 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/02 13:07:34 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstnew(void *content)
 	t_list	*head;
 
 	head = NULL;
-	head = (t_list *)malloc(sizeof(t_list));
+	head = malloc(sizeof(t_list));
 	if (head == NULL)
 		return (NULL);
 	head->content = content;
