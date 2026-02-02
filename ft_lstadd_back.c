@@ -6,7 +6,7 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:07:06 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/02/02 13:54:35 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/02 13:57:23 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	while (current->next != NULL)
 		current = current->next;
 	current->next = new;
-	new->next = NULL;
 }
