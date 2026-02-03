@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strdup.c                                           :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 12:43:51 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/17 13:28:02 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:18:52 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strdup(const char *s)
 {

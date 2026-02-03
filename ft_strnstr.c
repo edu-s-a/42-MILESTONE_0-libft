@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 18:11:26 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/23 16:39:26 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:17:48 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
+//#include <stdio.h>
+#include "libft.h"
 /*
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 

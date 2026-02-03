@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlcat.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edsole-a <edsole-a@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 14:13:30 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/14 14:54:20 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:11:30 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
+
 /*#include <bsd/string.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size);

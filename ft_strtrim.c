@@ -6,12 +6,11 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 13:15:04 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:09:31 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:19:36 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
+//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)

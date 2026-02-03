@@ -6,12 +6,10 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 13:37:13 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 19:51:11 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:09:59 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

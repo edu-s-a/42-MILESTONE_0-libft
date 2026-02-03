@@ -6,13 +6,13 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:04:18 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:05:31 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:18:32 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 #include <stdint.h>
-#include <bsd/string.h>
+//#include <bsd/string.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

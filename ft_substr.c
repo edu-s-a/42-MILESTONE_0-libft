@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 13:29:57 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:05:09 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:19:02 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

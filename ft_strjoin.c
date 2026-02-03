@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:56:37 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:07:24 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:19:10 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

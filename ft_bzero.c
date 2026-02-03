@@ -6,11 +6,11 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 14:05:18 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 20:05:37 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:10:08 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

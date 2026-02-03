@@ -6,11 +6,11 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 15:40:35 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/23 16:56:45 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:10:26 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

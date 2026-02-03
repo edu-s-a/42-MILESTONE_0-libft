@@ -6,22 +6,22 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 16:02:27 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/23 14:09:07 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:27:38 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void	ft_fill(unsigned char *d_char, const unsigned char *s_char, size_t n)
+static	void	ft_fill(unsigned char *d, const unsigned char *s, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	if (d_char < s_char)
+	if (d < s)
 	{
 		while (i < n)
 		{
-			d_char[i] = s_char[i];
+			d[i] = s[i];
 			i++;
 		}
 	}
@@ -29,7 +29,7 @@ void	ft_fill(unsigned char *d_char, const unsigned char *s_char, size_t n)
 	{
 		while (n > 0)
 		{
-			d_char[n - 1] = s_char[n - 1];
+			d[n - 1] = s[n - 1];
 			n--;
 		}
 	}

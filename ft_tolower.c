@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 17:02:01 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/23 16:53:47 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:13:05 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_tolower(int c)
 {

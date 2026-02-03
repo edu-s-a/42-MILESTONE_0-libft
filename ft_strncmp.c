@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 13:43:46 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/01/22 19:25:27 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:16:53 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+#include "libft.h"
 /*
 int	ft_strncmp(const char *s1,const char *s2, size_t n);
 
