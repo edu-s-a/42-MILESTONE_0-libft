@@ -6,11 +6,10 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 19:58:31 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/02/03 13:08:17 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:34:56 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 static	void	ft_free_split(char **res, int i)
@@ -28,14 +27,14 @@ static	int	ft_word_count(const char *s, char c, int i)
 	int	n_word;
 
 	n_word = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		while (s[i] == c)
+		while (s[i] && s[i] == c)
 			i++;
 		if (s[i])
 		{
 			n_word++;
-			while (s[i] != '\0' && s[i] != c)
+			while (s[i] && s[i] != c)
 				i++;
 		}
 	}
@@ -75,12 +74,15 @@ char	**ft_split(const char *s, char c)
 	int		n_word;
 	char	**res;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	n_word = ft_word_count(s, c, i);
 	res = (char **) malloc(sizeof(char *) * (n_word + 1));
 	if (!res)
 		return (NULL);
-	ft_set_words(n_word, res, s, c);
+	if (!ft_set_words(n_word, res, s, c))
+		return (NULL);
 	return (res);
 }
 /*

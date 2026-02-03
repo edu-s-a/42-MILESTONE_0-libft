@@ -6,12 +6,12 @@
 /*   By: edsole-a <edsole-a@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 17:11:27 by edsole-a          #+#    #+#             */
-/*   Updated: 2026/02/02 13:07:34 by edsole-a         ###   ########.fr       */
+/*   Updated: 2026/02/03 13:29:43 by edsole-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 t_list	*ft_lstnew(void *content)
 {
