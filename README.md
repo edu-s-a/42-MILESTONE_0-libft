@@ -42,7 +42,7 @@ The library provides a solid base for future 42 projects by offering reliable, r
 ### File Descriptor Output
 - `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` – output data to any file descriptor
 
-### Linked List Functions (Bonus)
+### Linked List Functions 
 - `t_list` – singly linked list structure  
 - `ft_lstnew` – create a new node  
 - `ft_lstadd_front`, `ft_lstadd_back` – add nodes to a list  
@@ -56,9 +56,26 @@ The library provides a solid base for future 42 projects by offering reliable, r
 
 ## Instructions
 
-### Compilation
-To build the library:
+To compile the library, run make to generate libft.a. Use make clean to remove object files, make fclean to remove object files and the library, and make re to rebuild everything. To use the library in other projects, include libft.h in your source files and link libft.a during compilation, for example: gcc main.c -L/path/to/libft -lft -o my_program. Once compiled, execute your program normally with ./my_program.
 
-```bash
-gcc -Wall -Wextra -Werror -c *.c
-ar rcs libft.a *.o
+## Resources
+
+During the development of the **Libft project**, the following resources were used to understand C programming concepts, function implementations, and project requirements:
+
+### Documentation
+- **[42 School Libft Subject PDF](https://cdn.intra.42.fr/pdf/pdf/12345/libft.pdf)** – Official project instructions and requirements.
+- **[C Standard Library Documentation (man pages)](https://man7.org/linux/man-pages/)** – Reference for standard C functions and behavior.
+
+### Learning and Tutorials
+- **[CS50 – Introduction to Computer Science (David J. Malan)](https://cs50.harvard.edu/x/)** – Comprehensive lessons on C programming, memory management, and problem-solving techniques.
+- **[GeeksforGeeks C Programming](https://www.geeksforgeeks.org/c-programming-language/)** – Tutorials and examples for C functions and memory management.
+
+### AI Usage
+
+This project leveraged artificial intelligence to assist in development and enhance certain project components. The AI was used for the following tasks:
+
+- **Code Generation and Optimization:** AI tools helped generate boilerplate code, suggest improvements, and optimize logic in specific modules.  
+- **Content and Documentation:** AI assisted in drafting this README, inline code comments, and other documentation to improve clarity and consistency.  
+- **Testing and Debugging Assistance:** AI suggested test cases and highlighted potential edge cases in the codebase.  
+
+All AI-generated content and suggestions were carefully reviewed and refined to ensure correctness and alignment with project objectives.
